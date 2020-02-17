@@ -1,5 +1,5 @@
 # [Santander Value Prediction Challenge](https://www.kaggle.com/c/santander-value-prediction-challenge/)
-Predict the value of transactions for potential customers.
+The aim of this challenge is to predict the "value of transactions for each potential customer" based on customer data provided by the Santander Bank. More specifically, the bank wants us to predict the "value of the customer's transaction" before it occurs. We are provided with an anonymized dataset containing numeric feature variables, the numeric target column, and a string ID column. 
 
 
 |Model|Public score|Private score|Final rank| 
