@@ -6,4 +6,4 @@ The evaluation metric for this competition is **Root Mean Squared Logarithmic Er
 
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
-|   ||| 602/4477 ([Top 14%](https://www.kaggle.com/shielaj/competitions)|
+|   |0.56584|0.61634| 602/4477 ([Top 14%](https://www.kaggle.com/shielaj/competitions)|
