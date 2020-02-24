@@ -20,6 +20,11 @@ The evaluation metric for this competition is **Root Mean Squared Logarithmic Er
 
 
 ## Model
+
+### Lagged Time-Series
+- Best score: 0.59429
+- Best lag value: 36
+
 ### LightGBM Time-Series
 
 **1. Re-format the training and test sets by:**
@@ -37,6 +42,7 @@ features that have been pre-scored
 **3. Tune a LightGBM regressor while monitoring the training and validation root mean squared error (RMSE).**
 
 **4. Make predictions on the test set using the trained LightGBM regressor.**
+
 
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
