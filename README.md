@@ -3,9 +3,21 @@ The aim of this challenge is to predict the "value of transactions for each pote
 
 The evaluation metric for this competition is **Root Mean Squared Logarithmic Error**.
 
+## EDA:
 
-**Best Score**:
-**Best Lag Value**: 36
+- Removal of train set’s constant columns from train and test
+- Removal of train set’s duplicate columns from train and test
+- A PCA analysis of the combined training and test dataset which found that approximately 3,000 features account for 95% of the dataset’s variance.
+
+
+## Dataset Observations
+- We do not have meaningful names for the features. So, we have to rely on other ways to analyze and understand the data.
+- Features are numeric and anonymized.
+- Features Sparsity.
+- There are a LOT of features Almost 5,000 and they outnumber the number of rows in the training set.
+- There are less than 5,000 training rows. In fact, there are fewer rows than columns, which means we'll have to invest a lot of effort into feature selection / feature engineering.
+- Pandas is treating 1,845 features as float, and 3,147 as integer. It is possible that some of those int features are one-hot-encoded or label-encoded categorical variables. 
+
 
 ## Model
 ### LightGBM Time-Series
