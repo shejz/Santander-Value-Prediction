@@ -4,6 +4,22 @@ The aim of this challenge is to predict the "value of transactions for each pote
 The evaluation metric for this competition is **Root Mean Squared Logarithmic Error**.
 
 
+**Best Score**:
+**Best Lag Value**: 36
+
+## Model
+**LightGBM Time-Series**
+
+Reformat the training and test sets by:
+(A) Adding the train and test leaks as new metadata features in the train and test sets
+(B) Loading the feature-scoring results for the desired time-series reconstruction configuration and
+integrating the highest-scoring features into the training and test sets
+(C) Loading and integrating the pre-calculated row-wise metadata into the train and test sets
+(D) Reduce the training and test sets to only include the newly-added features indicated in items (A)
+through (C)
+(E) Note that item (B)’s action can easily be modified to include the entire feature set rather than
+features that have been pre-scored
+
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
 | Lagged Time-Series  |0.56584|0.61634| 602/4477 ([Top 14%](https://www.kaggle.com/shielaj/competitions)|
