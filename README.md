@@ -8,7 +8,7 @@ The evaluation metric for this competition is **Root Mean Squared Logarithmic Er
 **Best Lag Value**: 36
 
 ## Model
-**LightGBM Time-Series**
+###LightGBM Time-Series
 
 **1. Re-format the training and test sets by:**
 - (A) Adding the train and test leaks as new metadata features in the train and test sets
