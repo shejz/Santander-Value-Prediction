@@ -21,8 +21,9 @@ through (C)
 features that have been pre-scored
 
 **2. Scale the training and test sets to zero mean and unit variance with respect to the training set features.**
-**3. Tune a LightGBM regressor while monitoring the training and validation root mean squared error.**
-(RMSE)
+
+**3. Tune a LightGBM regressor while monitoring the training and validation root mean squared error (RMSE).**
+
 **4. Make predictions on the test set using the trained LightGBM regressor.**
 
 |Model|Public score|Private score|Final rank| 
