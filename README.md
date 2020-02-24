@@ -10,15 +10,20 @@ The evaluation metric for this competition is **Root Mean Squared Logarithmic Er
 ## Model
 **LightGBM Time-Series**
 
-Reformat the training and test sets by:
-(A) Adding the train and test leaks as new metadata features in the train and test sets
-(B) Loading the feature-scoring results for the desired time-series reconstruction configuration and
-integrating the highest-scoring features into the training and test sets
-(C) Loading and integrating the pre-calculated row-wise metadata into the train and test sets
-(D) Reduce the training and test sets to only include the newly-added features indicated in items (A)
+**1**. Re-format the training and test sets by:
+- (A) Adding the train and test leaks as new metadata features in the train and test sets
+- (B) Loading the feature-scoring results for the desired time-series reconstruction configuration and
+integrating the highest-scoring features into the training and test sets.
+- (C) Loading and integrating the pre-calculated row-wise metadata into the train and test sets
+- (D) Reduce the training and test sets to only include the newly-added features indicated in items (A)
 through (C)
-(E) Note that item (B)’s action can easily be modified to include the entire feature set rather than
+- (E) Note that item (B)’s action can easily be modified to include the entire feature set rather than
 features that have been pre-scored
+
+**2**. Scale the training and test sets to zero mean and unit variance with respect to the training set features
+3. Tune a LightGBM regressor while monitoring the training and validation root mean squared error
+(RMSE)
+4. Make predictions on the test set using the trained LightGBM regressor
 
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
