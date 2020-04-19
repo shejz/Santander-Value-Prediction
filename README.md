@@ -47,4 +47,4 @@ features that have been pre-scored
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
 | Lagged Time-Series  |0.56584|0.61634| 602/4477 ([Top 14%](https://www.kaggle.com/shielaj/competitions))|
-| LightGBM Time-Series  |0.51276|0.55922| |
+| LightGBM Time-Series  |0.51276|0.55922| Late submission 🥉 |
